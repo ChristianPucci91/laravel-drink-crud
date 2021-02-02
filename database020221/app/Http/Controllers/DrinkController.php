@@ -21,4 +21,10 @@ class DrinkController extends Controller
      return view('pages.drink-show', compact('drink'));
 
     }
+
+    public function create() {
+
+     return view('pages.drink-create');
+
+    }
 }

@@ -11,3 +11,6 @@ Route::get('/index', 'DrinkController@index')
 
 Route::get('/index/{id}', 'DrinkController@show')
  ->name('drink-show');
+
+Route::get('/create','DrinkController@create')
+ ->name('drink-create');
