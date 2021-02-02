@@ -11,7 +11,7 @@ class DrinkController extends Controller
     public function index() {
 
       $drinks = Drink::all();
-      dd($drinks);
+      return view('pages.drink-index', compact('drinks'));
 
     }
 }
