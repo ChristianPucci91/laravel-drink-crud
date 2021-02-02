@@ -34,4 +34,11 @@ class DrinkController extends Controller
      return redirect() -> route('drink-index');
 
     }
+
+    public function edit($id) {
+
+     $drink = Drink::findOrFail($id);
+     dd($id);
+
+    }
 }
