@@ -2,11 +2,15 @@
 
 @section('content')
 
-  <a href="{{ route('drink-index')}}">Torna alla Homepage</a>
+  <h1><a href="{{ route('drink-index')}}">Torna alla Homepage</a></h1>
 
-  <p>id: {{ $drink -> id}}</p>
-  <p>Name: {{ $drink -> name}}</p>
-  <p>Gradation: {{ $drink -> gradation}}°</p>
-  <p>Price: {{ $drink -> price }} $</p>
+  <div class="box">
+
+    <p>id: {{ $drink -> id}}</p>
+    <p>Name: {{ $drink -> name}}</p>
+    <p>Gradation: {{ $drink -> gradation}}°</p>
+    <p>Price: {{ $drink -> price }} $</p>
+
+  </div>
 
 @endsection

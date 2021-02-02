@@ -1,4 +1,66 @@
 body {
-  background: lightgrey;
+  background: lightblue;
+}
+
+header,
+footer {
+  display: flex;
+  height: 100px;
+  background: black;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: yellow;
+}
+
+.box,
+form {
+  width: 200px;
+  background: grey;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.box .name,
+form .name {
+  text-align: center;
+}
+
+.box .name a,
+form .name a {
+  font-size: 30px;
+}
+
+.box .link,
+form .link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.box p,
+form p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box .button,
+form .button {
+  margin: 20px;
 }
 

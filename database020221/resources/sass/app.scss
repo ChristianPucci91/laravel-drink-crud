@@ -1,3 +1,50 @@
 body {
-  background: lightgrey;
+  background: lightblue;
+}
+
+header,footer {
+  display: flex;
+  height: 100px;
+  background: black;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+
+h1 {
+  margin:20px;
+}
+a {
+  text-decoration: none;
+  color:black;
+  &:hover {
+    color:yellow;
+  }
+}
+.box,form {
+  width: 200px;
+  background:grey;
+  border:1px solid black;
+  display: inline-block;
+  margin:20px;
+  padding: 20px;
+  text-align: center;
+  .name {
+    text-align: center;
+    a {
+      font-size: 30px;
+    }
+  }
+  .link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .button {
+    margin: 20px;
+  }
 }

@@ -24,7 +24,7 @@
 
     <br>
 
-    <input type="submit" value="Aggiorna">
+    <input class="button" type="submit" value="Aggiorna">
 
   </form>
 

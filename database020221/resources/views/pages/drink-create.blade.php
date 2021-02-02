@@ -24,7 +24,7 @@
 
     <br>
 
-    <input type="submit" value="Salva">
+    <input class="button" type="submit" value="Salva">
 
   </form>
 
