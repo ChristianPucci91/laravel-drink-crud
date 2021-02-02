@@ -4,7 +4,7 @@
 
   <h1>Aggiungi un nuovo drink!</h1>
 
-  <form  method="POST">
+  <form action="{{ route('drink-store')}}" method="POST">
 
     @csrf
     @method('POST')

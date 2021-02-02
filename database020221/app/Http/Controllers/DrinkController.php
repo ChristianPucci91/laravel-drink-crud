@@ -27,4 +27,11 @@ class DrinkController extends Controller
      return view('pages.drink-create');
 
     }
+
+    public function store(Request $request) {
+
+     Drink::create($request -> all());
+     return redirect() -> route('drink-index');
+
+    }
 }

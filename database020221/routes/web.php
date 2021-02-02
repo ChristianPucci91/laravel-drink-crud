@@ -14,3 +14,6 @@ Route::get('/index/{id}', 'DrinkController@show')
 
 Route::get('/create','DrinkController@create')
  ->name('drink-create');
+
+Route::post('/store' , 'DrinkController@store')
+ ->name('drink-store');
