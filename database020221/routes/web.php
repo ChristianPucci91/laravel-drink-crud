@@ -23,3 +23,6 @@ Route::get('/edit/{id}','DrinkController@edit')
 
 Route::post('/update/{id}' ,'DrinkController@update')
  ->name('drink-update');
+
+Route::get('/delete/{id}','DrinkController@delete')
+ ->name('drink-delete');

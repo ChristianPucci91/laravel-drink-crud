@@ -12,8 +12,8 @@
       <p>
 
         {{ $drink -> name }}
-        <a href="{{ route('drink-edit', $drink -> id)}}">EDIT</a>
-        <a href="#">DELETE</a>
+        <a href="{{ route('drink-edit', $drink -> id )}}">EDIT</a>
+        <a href="{{ route('drink-delete', $drink -> id )}}">DELETE</a>
 
       </p>
     </a>
