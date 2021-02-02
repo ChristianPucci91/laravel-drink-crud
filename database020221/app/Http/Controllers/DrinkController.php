@@ -14,4 +14,11 @@ class DrinkController extends Controller
       return view('pages.drink-index', compact('drinks'));
 
     }
+
+    public function show($id) {
+
+     $drink = Drink::findOrFail($id);
+     return view('pages.drink-show', compact('drink'));
+
+    }
 }

@@ -8,3 +8,6 @@ Route::get('/', function () {
 
 Route::get('/index', 'DrinkController@index')
  ->name('drink-index');
+
+Route::get('/index/{id}', 'DrinkController@show')
+ ->name('drink-show');

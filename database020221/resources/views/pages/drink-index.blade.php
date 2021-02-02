@@ -6,7 +6,11 @@
 
   @foreach ($drinks as $drink)
 
-    <p>{{ $drink -> name }}</p>
+    <a href="{{ route('drink-show', $drink -> id )}}">
+      <p>
+        {{ $drink -> name }}
+      </p>
+    </a>
 
   @endforeach
 
