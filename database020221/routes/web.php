@@ -20,3 +20,6 @@ Route::post('/store' , 'DrinkController@store')
 
 Route::get('/edit/{id}','DrinkController@edit')
  ->name('drink-edit');
+
+Route::post('/update/{id}' ,'DrinkController@update')
+ ->name('drink-update');

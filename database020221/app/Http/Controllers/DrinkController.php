@@ -38,7 +38,15 @@ class DrinkController extends Controller
     public function edit($id) {
 
      $drink = Drink::findOrFail($id);
-     dd($id);
+     return view('pages.drink-edit',compact('drink'));
+
+    }
+
+    public function update(Request $request, $id) {
+
+      $drink = Drink::findOrFail($id);
+      $drink -> update($request -> all());
+      return redirect() -> route('drink-show', $drink -> id);
 
     }
 }
